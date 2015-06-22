@@ -1,8 +1,8 @@
 # Site settings
 title: VLVical
 email: nrrsso@gmail.com
-baseurl: /vlv.ical
-url: http://vlvical.github.io/vlv.ical
+baseurl: /
+url: http://vlvical.github.io/
 description: "Ein Plugin für einen entspannten Semesteranfang."
 
 # Contact form: comment the line below if you want to stick with the default PHP contact form

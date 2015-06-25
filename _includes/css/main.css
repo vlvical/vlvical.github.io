@@ -451,6 +451,6 @@ footer .footer-below {
 .team-member img {
     margin: 0 auto;
     border: 7px solid #fff;
-    max-width: 100px;
-    max-height: 100px;
+    max-width: 150px;
+    max-height: 150px;
 }

@@ -37,7 +37,8 @@ h6 {
 }
 
 hr.star-light,
-hr.star-primary {
+hr.star-primary,
+hr.star-dark {
     margin: 25px auto 30px;
     padding: 0;
     max-width: 250px;
@@ -47,7 +48,8 @@ hr.star-primary {
 }
 
 hr.star-light:after,
-hr.star-primary:after {
+hr.star-primary:after,
+hr.star-dark:after {
     content: "\f005";
     display: inline-block;
     position: relative;
@@ -64,6 +66,15 @@ hr.star-light {
 hr.star-light:after {
     color: #fff;
     background-color: #{{ site.color.primary }};
+}
+
+hr.star-dark {
+    border-color: #fff;
+}
+
+hr.star-dark:after {
+    color: #fff;
+    background-color: #{{ site.color.secondary }};
 }
 
 hr.star-primary {
@@ -182,6 +193,11 @@ section h2 {
 section.success {
     color: #fff;
     background: #{{ site.color.primary }};
+}
+
+section.primary {
+    color: #fff;
+    background: #{{ site.color.secondary }};
 }
 
 @media(max-width:767px) {

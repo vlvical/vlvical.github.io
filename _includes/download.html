@@ -20,9 +20,15 @@
                     <hr class="star-dark">
                 </div>
                 <div class="col-lg-8 col-lg-offset-2 text-center">
-                    <a onclick="chrome.webstore.install()" class="btn btn-lg btn-outline" id="install-button">
+                    <button type="button" onclick="chrome.webstore.install()" class="btn btn-lg btn-outline" id="install-button">
                         <i class="fa fa-download"></i> Installieren
-                    </a>
+                            <script>
+                                if (chrome.app.isInstalled) {
+                                    document.getElementById('install-button').disabled = true;
+                                    document.getElementById('install-button').textContent = "Bereits installiert";
+                                }
+                           </script>
+                    </button>
                 </div>
             </div>
         </div>

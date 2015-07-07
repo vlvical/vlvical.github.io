@@ -14,6 +14,7 @@
 
     <!-- Custom Fonts -->
     <link rel="stylesheet" href="/css/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/css/font-awesome-more/css/font-awesome-ext.css">   
     <link rel="stylesheet" href="/css/pictonic/css/pictonic.css">
     <link href="//fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
     <link href="//fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
@@ -143,9 +144,15 @@
                     <hr class="star-dark">
                 </div>
                 <div class="col-lg-8 col-lg-offset-2 text-center">
-                    <a onclick="chrome.webstore.install()" class="btn btn-lg btn-outline" id="install-button">
-                        <i class="fa fa-download"></i> Installieren
-                    </a>
+                    <button type="button" onclick="chrome.webstore.install()" class="btn btn-lg btn-outline" id="install-button">
+                        <i class="fa fa-download"></i> Installieren  <i class="icon-chrome"></i>
+                            <script>
+                                if (chrome.app.isInstalled) {
+                                    document.getElementById('install-button').disabled = true;
+                                    document.getElementById('install-button').textContent = "Bereits installiert";
+                                }
+                           </script>
+                    </button>
                 </div>
             </div>
         </div>

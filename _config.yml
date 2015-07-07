@@ -1,5 +1,5 @@
 # Site settings
-title: VLVical
+title: VLV.ical
 email: nrrsso@gmail.com
 url: http://vlvical.github.io/
 description: "Ein Plugin für einen entspannten Semesteranfang."
@@ -17,7 +17,7 @@ color:
 footer:
   copyright: Softwareprojekt Gruppe-14
   location: TU Ilmenau
-  social: Für Codenasen
+  social: Für Code-Nasen
   credits: Trivia
 
 # Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)

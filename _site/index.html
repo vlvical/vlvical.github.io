@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="/css/pictonic/css/pictonic.css">
     <link href="//fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
     <link href="//fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <link rel="chrome-webstore-item" href="https://chrome.google.com/webstore/detail/pfmhnjhlejjncbbmkopeeinhiolpccon">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -142,8 +143,8 @@
                     <hr class="star-dark">
                 </div>
                 <div class="col-lg-8 col-lg-offset-2 text-center">
-                    <a href="#" class="btn btn-lg btn-outline" disabled="disabled">
-                        <i class="fa fa-download"></i> Bald Verfügbar
+                    <a onclick="chrome.webstore.install()" class="btn btn-lg btn-outline" id="install-button">
+                        <i class="fa fa-download"></i> Installieren
                     </a>
                 </div>
             </div>

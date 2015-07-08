@@ -20,9 +20,15 @@
                     <hr class="star-dark">
                 </div>
                 <div class="col-lg-8 col-lg-offset-2 text-center">
-                    <a href="#" class="btn btn-lg btn-outline" disabled="disabled">
-                        <i class="fa fa-download"></i> Bald Verfügbar
-                    </a>
+                    <button type="button" onclick="chrome.webstore.install()" class="btn btn-lg btn-outline" id="install-button">
+                        <i class="fa fa-download"></i> Installieren <i class="icon-chrome"></i>
+                            <script>
+                                if (document.getElementById('extension-is-installed')) {
+                                        document.getElementById('install-button').disabled = true;
+                                        document.getElementById('install-button').textContent = "Bereits installiert";
+                                }
+                           </script>
+                    </button>
                 </div>
             </div>
         </div>
